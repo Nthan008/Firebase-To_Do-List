@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Define a custom text shadow class */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  /* Custom underline style */
+/* Global styles.css or index.css */
+.full-width-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    left: 50%; /* Center the container */
+    right: 50%;
+    transform: translateX(-50%); /* Offset the container to align correctly */
+  }
+  
+  .cool-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the text */
+    left: 0; /* Stretch from the left edge */
+    width: 100vw; /* Full viewport width */
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    margin-top: 8px; /* Distance between text and underline */
+  }
+  .sign-out-arrow {
+    background-color: transparent; /* Set the background color */
+    color: #000000; /* Set the text color */
+    padding: 8px 12px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  /* If you're not using TailwindCSS, add classes for .absolute, .top-0, .pt-4, and .pl-4 as needed */
+  
+  
